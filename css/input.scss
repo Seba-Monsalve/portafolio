@@ -1,0 +1,121 @@
+@import 'reset.scss';
+@import 'color.scss';
+@import 'fonts.scss';
+@import 'animation.scss';
+
+
+nav {
+    // background-image: linear-gradient(to left, black, $primary-color) !important;
+    background-color: $primary-color;
+}
+
+
+.icon {
+    height: 5em;
+    margin: 0 1.5em;
+    transition: opacity 0.5s ease;
+}
+
+.icon:hover {
+    opacity: 0.6;
+}
+
+
+.card {
+    min-width: 10em;
+    width: 15em;
+    margin: 1em;
+    box-shadow: 3px 3px 3px gray;
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 7px 7px 4px $primary-color;
+}
+
+.bloque-celeste {
+    font-size: 2.5em;
+    background-color: $primary-color;
+
+    // background-image: linear-gradient(to left, black, $primary-color) !important;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+a:link,
+a:visited,
+a:link:active,
+a:visited:active {
+    text-decoration: none;
+    color: white;
+
+}
+
+a {
+    transition: opacity 0.5s ease;
+    font-size: 1.5em;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+footer {
+    .icon {
+        height: 2em;
+        margin: 0 0.5em;
+        filter: invert(100%) sepia(0%) saturate(7437%) hue-rotate(189deg) brightness(111%) contrast(98%);
+    }
+    .icon:hover {
+        cursor: pointer;
+        filter: invert(100%) sepia(0%) saturate(7437%) hue-rotate(189deg) brightness(111%) contrast(98%);
+    }
+    // background-image: linear-gradient(to left, black, $primary-color);
+    background-color: $primary-color;
+}
+
+.bg-dark {
+    background-color: $dark-color;
+    color: white;
+}
+.txt-blue {
+    color: $primary-color;
+}
+
+
+
+
+// ANIMACIONES
+
+#docker {
+    animation: vaiven 5s ease 0s infinite alternate-reverse;
+}
+
+#react {
+    animation: spin 5s linear 0s infinite;
+}
+
+#bootstrap {
+    animation: color 5s linear 0s infinite normal;
+}
+#txt{
+    animation: parpadeo 7s ease-in-out 0s infinite normal;
+}
+
+#foto_perfil{
+transition: all 0.5s;
+}
+
+#foto_perfil:hover {
+    border-radius: 50px;
+    overflow: hidden;
+    animation: foto 2s ease-in 0s 1 forwardss ;
+
+  }

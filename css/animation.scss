@@ -1,0 +1,76 @@
+@keyframes vaiven {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: translate(2px, 2px);
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: translate(2px, 2px);
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes color {
+    0% {}
+
+    50% {
+        filter: invert(14%) sepia(96%) saturate(7323%) hue-rotate(270deg) brightness(95%) contrast(105%);
+    }
+
+    100% {}
+}
+
+@keyframes parpadeo {
+    0% {}
+    25% {
+        opacity: 0;
+    }
+    100% {}
+}
+
+
+@keyframes foto {
+    0% {}
+    25% {
+        opacity: 0;
+
+    }
+    100% {
+        opacity: 1;
+        filter: invert(100%);
+        filter: hue-rotate(180deg);
+    }
+}

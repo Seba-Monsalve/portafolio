@@ -1,0 +1,170 @@
+* {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+* {
+  font-family: "Segoe UI", s Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes vaiven {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: translate(2px, 2px);
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: translate(2px, 2px);
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes color {
+  50% {
+    filter: invert(14%) sepia(96%) saturate(7323%) hue-rotate(270deg) brightness(95%) contrast(105%);
+  }
+}
+@keyframes parpadeo {
+  25% {
+    opacity: 0;
+  }
+}
+@keyframes foto {
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    filter: invert(100%);
+    filter: hue-rotate(180deg);
+  }
+}
+nav {
+  background-color: #0F6292;
+}
+
+.icon {
+  height: 5em;
+  margin: 0 1.5em;
+  transition: opacity 0.5s ease;
+}
+
+.icon:hover {
+  opacity: 0.6;
+}
+
+.card {
+  min-width: 10em;
+  width: 15em;
+  margin: 1em;
+  box-shadow: 3px 3px 3px gray;
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 7px 7px 4px #0F6292;
+}
+
+.bloque-celeste {
+  font-size: 2.5em;
+  background-color: #0F6292;
+}
+
+p {
+  font-size: 1.3em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+a:link,
+a:visited,
+a:link:active,
+a:visited:active {
+  text-decoration: none;
+  color: white;
+}
+
+a {
+  transition: opacity 0.5s ease;
+  font-size: 1.5em;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+footer {
+  background-color: #0F6292;
+}
+footer .icon {
+  height: 2em;
+  margin: 0 0.5em;
+  filter: invert(100%) sepia(0%) saturate(7437%) hue-rotate(189deg) brightness(111%) contrast(98%);
+}
+footer .icon:hover {
+  cursor: pointer;
+  filter: invert(100%) sepia(0%) saturate(7437%) hue-rotate(189deg) brightness(111%) contrast(98%);
+}
+
+.bg-dark {
+  background-color: #000000;
+  color: white;
+}
+
+.txt-blue {
+  color: #0F6292;
+}
+
+#docker {
+  animation: vaiven 5s ease 0s infinite alternate-reverse;
+}
+
+#react {
+  animation: spin 5s linear 0s infinite;
+}
+
+#bootstrap {
+  animation: color 5s linear 0s infinite normal;
+}
+
+#txt {
+  animation: parpadeo 7s ease-in-out 0s infinite normal;
+}
+
+#foto_perfil {
+  transition: all 0.5s;
+}
+
+#foto_perfil:hover {
+  border-radius: 50px;
+  overflow: hidden;
+  animation: foto 2s ease-in 0s 1 forwardss;
+}
+
+/*# sourceMappingURL=style.css.map */
