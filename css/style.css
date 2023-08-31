@@ -56,10 +56,13 @@
   25% {
     opacity: 0;
   }
-  100% {
+  75% {
     opacity: 1;
     filter: invert(100%);
     filter: hue-rotate(180deg);
+  }
+  100% {
+    opacity: 1;
   }
 }
 nav {
@@ -164,7 +167,7 @@ footer .icon:hover {
 #foto_perfil:hover {
   border-radius: 50px;
   overflow: hidden;
-  animation: foto 2s ease-in 0s 1 forwardss;
+  animation: foto 2s ease-in 0s 1 forwards;
 }
 
 /*# sourceMappingURL=style.css.map */
